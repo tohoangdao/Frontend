@@ -36,6 +36,11 @@ module.exports = {
         protocol: 'http',
         hostname: '**', // Allow any domain with http
       },
+      {
+        protocol: 'http',
+        hostname: 'localhost', // Localhost for local development
+        port: '8000', // Specify the port if needed
+      },
     ],
   },
   output: "standalone",
