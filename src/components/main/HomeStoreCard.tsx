@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function HomeStoreCard(data: any) {
@@ -5,7 +6,7 @@ function HomeStoreCard(data: any) {
     <div className="flex flex-col">
       <Link href={`/store/${data._id}`} className="hover:underline">
         <div className="relative h-48">
-          <img src={data.image} alt="store" />
+          <Image src={data.image} alt="store" layout="fill" objectFit="cover" />
         </div>
 
         <h2 className="text-xl font-bold">{data.name}</h2>
